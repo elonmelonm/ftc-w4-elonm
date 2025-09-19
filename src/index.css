@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Tartuffo";
+  src: url("./assets/fonts/Tartuffo_Trial-Regular-BF643371db1355b.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gustavo";
+  src: url("./assets/fonts/Gustavo_trial-Regular-BF65f254e22bb0e.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme{
+    --font-tartuffo: "Tartuffo", sans-serif;
+    --font-gustavo: "Gustavo", sans-serif;
+}
