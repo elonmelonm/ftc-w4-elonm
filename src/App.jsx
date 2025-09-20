@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="">
+      <div className="bg-[#FAF6F3]">
         <div className="relative flex flex-col h-[1460px]">
           <Header />
           <HeroVideo />
