@@ -2,6 +2,7 @@ import { Bento } from "./components/Bento"
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
 import { HeroVideo } from "./components/HeroVideo"
+import { PlugNTote } from "./components/PlugNTote"
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Hero />
         </div>
         <Bento />
+        <PlugNTote />
       </div>
     </>
   )
