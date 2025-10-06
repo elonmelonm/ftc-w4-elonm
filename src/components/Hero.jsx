@@ -20,8 +20,6 @@ export function Hero (){
                 <div class="w-[1px] h-[400px] left-[calc(50%-1px/2-0.5px)] top-[269px] 
                     bg-[linear-gradient(180deg,#513E40_0%,rgba(183,140,145,0)_100%)]">
                 </div>
-
-
             </div>
         </>
     )

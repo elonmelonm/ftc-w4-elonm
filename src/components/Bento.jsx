@@ -8,7 +8,7 @@ import Image16 from '../assets/image 16.png'
 export function Bento() {
     return (
         <>
-            <div className="relative w-full h-[1142px] flex flex-col items-center pt-[116px] pb-[100px]  ">
+            <div  id="header-blur-visible" className="relative w-full h-[1142px] flex flex-col items-center pt-[116px] pb-[100px] ">
                 <div className="relative grid grid-flow-col grid-rows-3 gap-4">
                     
                     <div class="relative overflow-x-clip overflow-y-clip bg-[#FFFFFF] row-span-2 justify-between  pb-8 rounded-[8px] flex flex-col pt-[101px] gap-[30px] ...">
