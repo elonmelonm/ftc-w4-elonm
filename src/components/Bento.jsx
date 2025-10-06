@@ -12,7 +12,7 @@ export function Bento() {
                 <div className="relative grid grid-flow-col grid-rows-3 gap-4">
                     
                     <div class="relative overflow-x-clip overflow-y-clip bg-[#FFFFFF] row-span-2 justify-between  pb-8 rounded-[8px] flex flex-col pt-[101px] gap-[30px] ...">
-                        <span className="absolute flex flex-1 overflow-clip left-[-365px] mr- z-10 ">
+                        <span className="absolute flex flex-1 overflow-clip left-[-365px] hover:left-[-345px] hover:scale-105 transition-all duration-500 mr- z-10 ">
                             <img className=' w-[672px] h-[350px] mr-[73px] bg-cover' src={TransCote} alt="" />
                         </span>
                         <br />
@@ -39,14 +39,14 @@ export function Bento() {
                         </div>
                         <div className="absolute overflow-clip bottom-0 right-0">
                             <div className="relative w-[1002px] h-[565px]">
-                            <img className='absolute w-full h-full bottom-[-178px] right-[-470px] ' src={Savoureuse} alt="" />
+                            <img className='absolute w-full h-full bottom-[-178px] right-[-470px] hover:right-[-390px] transition-all duration-500 ' src={Savoureuse} alt="" />
                             </div>
                         </div>
                     </div>
                     <div class="relative bg-[#FFFFFF] overflow-clip col-span-2 rounded-[8px] ">
                         <div className="absolute w-[580px] h-[298px] left-0 top-0">
                             <div className="relative w-[1308px] h-[472px]">
-                                <img className='absolute w-full h-full top-[-78px] left-[-151px] bg-cover ' src={Personnalisable} alt="" />
+                                <img className='absolute w-full h-full top-[-78px] left-[-151px] bg-cover hover:left-[-131px] transition-all duration-500 ' src={Personnalisable} alt="" />
                             </div>
                         </div>
                         <div className="absolute top-[97px] left-[220px] w-[320px] h-[99px] flex flex-col gap-6">
@@ -60,7 +60,7 @@ export function Bento() {
                     </div>
                     <div class="relative bg-[#FFFFFF] flex flex-col gap-[39px] p-8 rounded-[8px] ">
                         <div className=" w-[216px] h-[99px] px-1 py-[22px] flex flex-col gap-6">
-                            <img className='w-full h-full ' src={Madeinfrance} alt="" />
+                            <img className='w-full h-full hover:scale-105 hover:rotate-[-10deg] z-10 transition-all duration-500 ' src={Madeinfrance} alt="" />
                         </div>
                         <div className=" w-[216px] h-[99px] flex flex-col gap-6">
                             <h1 class="w-full min-h-[21px] font-tartuffo text-[25.22px] leading-[41.19px] text-[#5D4043] ">
@@ -74,8 +74,6 @@ export function Bento() {
 
                     </div>
                     <div class="relative bg-[#FFFFFF] flex flex-col overflow-clip gap-[39px] p-8 rounded-[8px] ">
-                        <div className="absolute w-[555px] h-full left-[-48px] top-[162px] 
-                        bg-[#EBE0D8] mix-blend-multiply blur-[80px]"></div>
                         <div className=" w-[183px] h-[120px] flex flex-col gap-6">
                             <h1 class="w-full min-h-[21px] font-tartuffo text-[25.22px] leading-[41.19px] text-[#5D4043] ">
                                 innovante
@@ -84,23 +82,29 @@ export function Bento() {
                                 Technologies de pointe offrant une expérience de suçotage révolutionnaire et inégalée.
                             </span>
                         </div>
-                        <div className="absolute w-[393.82px] h-[221.52px] top-[127.63px] left-[9.38px] rotate-[-2.54deg] ">
+                        <div className="absolute w-[393.82px] h-[221.52px] z-10 top-[127.63px] left-[9.38px] rotate-[-2.54deg] group hover:top-[88px] transition-all duration-500 ">
                             <img className='w-full h-full ' src={Innovante} alt="" />
                         </div>
+                        <div className="absolute w-[555px] h-full left-[-48px] top-[162px] 
+                        bg-[#EBE0D8] mix-blend-multiply blur-[80px] group-hover:top-[103px] transition-all duration-500"></div>
                         
 
                     </div>
-                    <div class="flex flex-col bg-[#EBE0D8] rounded-[8px] p-8 gap-[18px] col-span- ...">
-                        <div className="w-6 h-[88px]">
-                            <span>
-                                <svg width="24" height="6" viewBox="0 0 24 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="8" height="6" fill="#003DB3"/>
-                                    <rect x="8" width="8" height="6" fill="white"/>
-                                    <rect x="16" width="8" height="6" fill="#F73C53"/>
-                                </svg>
-                            </span>
+                      <div class="relative flex flex-col bg-[#EBE0D8] hover:bg-white transition-all duration-500 rounded-[8px] p-8 gap-[18px] col-span- ... group" >
+                         <div className="w-6 h-[6px] group-hover:h-[88px] transition-all duration-500">
+                         <span class="
+                            absolute 
+                            w-6 
+                            h-[6px] 
+                            left-8 
+                            top-8
+                            bg-[linear-gradient(90deg,#003DB3_0_33.33%,white_33.33%_66.67%,#F73C53_66.67%_100%)]
+                            group-hover:h-[88px] transition-all duration-500
+                            "
+                            style={{background: 'linear-gradient(180deg, #D9D9D9 0%, 91.5%)'}}
+                        ></span>
                         </div>
-                        <div className="flex flex-col w-[234px] h-[128px] gap-6 ">
+                        <div className="absolute top-[138px] flex flex-col w-[234px] h-[128px] gap-6 ">
                             <h1 class="w-[full min-h-[21px] font-tartuffo text-[32px] leading-[90%] text-[#5D4043] ">
                                 hébergement 100% français
                             </h1>

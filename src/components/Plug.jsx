@@ -14,28 +14,28 @@ export function Plug() {
             <div className="relative pt-[72px] min-h-[851px] flex flex-col justify-cente items-center">
                 <div className="flex w-[1178px] h-[217px] justify-center items-center">
                     <div className="grid grid-cols-8 w-[720px] h-[200px]">
-                        <div className="w-[90px] h-full px-2.5 pt-[45px]">
+                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug1} alt="" />
                         </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px]">
+                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug2} alt="" />
                         </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px]">
+                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug3} alt="" />
                         </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px]">
+                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug4} alt="" />
                         </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px]">
+                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug5} alt="" />
                         </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px]">
+                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug6} alt="" />
                         </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px]">
+                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug7} alt="" />
                         </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px]">
+                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug8} alt="" />
                         </div>
                     </div>

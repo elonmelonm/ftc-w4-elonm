@@ -15,7 +15,9 @@ export function Autonomie() {
             </div>
 
             {/* image */}
-            <img className="absolute w-[800px] h-[240px] rotate-[-45deg] left-1/2 -translate-x-1/2 top-[45%]" src={TrasnFaceImg} alt="" />
+            <div className="absolute left-1/2 -translate-x-1/2 top-[45%] flex justify-center w-[960px] h-[735px] group cursor-pointer">
+                <img className="w-[800px] h-[240px] rotate-[-45deg] group-hover:rotate-[-15deg] transition-all duration-1000 " src={TrasnFaceImg} alt="" />
+            </div>
 
             <div className="absolute bottom-0 left-1/2 translate-x-1/3 flex flex-row w-[291px] min-h-[197px] gap-12">
                 <div className="flex flex-col w-[296px] min-h-[165px] gap-12">
