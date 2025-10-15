@@ -18,160 +18,163 @@ export function BuyFooter() {
     return (
         <>
             <div className="relative w-full h-[2528px]">
-                {/* slider */}
-                <div className="sticky top-0 left-[240px] z-10 w-[960px] h-[770px] flex items-end">
-                    <div className="relative w-full h-[540px] rounded-[8px] bg-red-500">
-                        <div className="relative w-full h-full rounded-[8px] overflow-hidden">
-                            {/* track */}
-                            <div
-                                className="flex h-full transition-transform duration-500 ease-out"
-                                style={{ transform: `translateX(-${activeIndex * 960}px)` }}
-                            >
-                                <img src={Img2} alt="slider image1" className="w-[960px] h-full object-cover" />
-                                <img src={Img3} alt="slider image2" className="w-[960px] h-full object-cover" />
-                                <img src={Img4} alt="slider image3" className="w-[960px] h-full object-cover" />
+                <div className="flex flex-row h-full px-[240px] gap-[88px]">
+
+                    {/* slider */}
+                    <div className="sticky top-[230px] z-10 h-[770px] flex flex-1 items-en">
+                        <div className="relative w-full h-[540px] rounded-[8px] bg-red-500">
+                            <div className="relative w-full h-full rounded-[8px] overflow-hidden">
+                                {/* track */}
+                                <div
+                                    className="flex h-full transition-transform duration-500 ease-out"
+                                    style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+                                    >
+                                    <img src={Img2} alt="slider image1" className="w-full h-full object-cover" />
+                                    <img src={Img3} alt="slider image2" className="w-full h-full object-cover" />
+                                    <img src={Img4} alt="slider image3" className="w-full h-full object-cover" />
+                                </div>
                             </div>
-                        </div>
-                        {/* left arrow */}
-                        <button 
-                            onClick={handlePrevClick}
-                            className="absolute top-[250px] z-10 left-4 flex justify-center items-center w-10 h-10 rounded-full bg-white opacity-[50%] cursor-pointer hover:opacity-100"
-                        >
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M8.70707 12L14.3535 6.35353L13.6464 5.64642L7.29286 12L13.6464 18.3535L14.3535 17.6464L8.70707 12Z" fill="#30171B"/>
-                            </svg>
-                        </button>
-                        {/* right arrow */}
-                        <button 
-                            onClick={handleNextClick}
-                            className="absolute top-[250px] z-10 right-4 flex justify-center items-center w-10 h-10 rounded-full bg-white opacity-[50%] cursor-pointer hover:opacity-100"
-                        >
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path fillRule="evenodd" clipRule="evenodd" d="M15.2929 12L9.64648 6.35359L10.3536 5.64648L16.7071 12L10.3536 18.3536L9.64648 17.6465L15.2929 12Z" fill="#30171B"/>
-                            </svg>
-                        </button>
-                        <div className="absolute left-1/2 bottom-4 grid grid-cols-3 w-8 h-2 gap-1">
-                            {[0, 1, 2].map((index) => (
-                                <span 
+                            {/* left arrow */}
+                            <button 
+                                onClick={handlePrevClick}
+                                className="absolute top-[250px] z-10 left-4 flex justify-center items-center w-10 h-10 rounded-full bg-white opacity-[50%] cursor-pointer hover:opacity-100"
+                                >
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M8.70707 12L14.3535 6.35353L13.6464 5.64642L7.29286 12L13.6464 18.3535L14.3535 17.6464L8.70707 12Z" fill="#30171B"/>
+                                </svg>
+                            </button>
+                            {/* right arrow */}
+                            <button 
+                                onClick={handleNextClick}
+                                className="absolute top-[250px] z-10 right-4 flex justify-center items-center w-10 h-10 rounded-full bg-white opacity-[50%] cursor-pointer hover:opacity-100"
+                                >
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M15.2929 12L9.64648 6.35359L10.3536 5.64648L16.7071 12L10.3536 18.3536L9.64648 17.6465L15.2929 12Z" fill="#30171B"/>
+                                </svg>
+                            </button>
+                            <div className="absolute left-1/2 bottom-4 grid grid-cols-3 w-8 h-2 gap-1">
+                                {[0, 1, 2].map((index) => (
+                                    <span 
                                     key={index}
                                     className={`w-2 h-2 rounded-full bg-[#30171B] ${activeIndex === index ? '' : 'opacity-[50%]'}`}
                                     onClick={() => setActiveIndex(index)}
                                     style={{ cursor: 'pointer' }}
-                                ></span>
-                            ))}
+                                    ></span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                    {/* side element */}
+                    <div className="flex flex-col w-[392px] h-[1136px] justify-between ">
+                        <div className="flex flex-col justify-center items-center w-[382px] h-[169px] gap-8">
+                            <span class="w-full font-tartuffo font-regular text-[64px] leading-[90%] text-[#30171B]">
+                                personnalisez votre tototte
+                            </span>
+                            <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                Vous allez créer la tototte idéale pour vous. À chacun son expérience, à chacun sa tototte.
+                            </span>
+                        </div>
+                        <div className="flex flex-col justify-center w-[382px] h-[169px] gap-6">
+                            <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
+                                finition
+                            </span>
+                            <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                Choisissez votre favorite
+                            </span>
+                            <div className="flex flex-row w-[216px] h-12 gap-2">
+                                <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
+                                    <span className="w-10 h-10 rounded-full" style={{ background: 'linear-gradient(132.51deg, #FFE7DB 0%, #EECDBF 96.01%)' }}></span>
+                                </span>
+                                <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
+                                    <span className="w-10 h-10 rounded-full" style={{ background: 'linear-gradient(132.51deg, #DBF2FF 0%, #BFC7EE 96.01%)' }}></span>
+                                </span>
+                                <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
+                                    <span className="w-10 h-10 rounded-full" style={{ background: 'linear-gradient(132.51deg, #F6F6F6 0%, #D8D8D8 96.01%)' }}></span>
+                                </span>
+                                <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
+                                    <span className="w-10 h-10 rounded-full" style={{ background: 'linear-gradient(132.51deg, #99969F 0%, #484848 96.01%)' }}></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div className="flex flex-col justify-center w-[382px] h-[169px] gap-6">
+                            <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
+                                ornement
+                            </span>
+                            <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                Choisissez votre pierre précieuse
+                            </span>
+                            <div className="flex flex-row w-[216px] h-12 gap-2">
+                                <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
+                                    <span className="w-10 h-10 bg-[#017AD7] rounded-full"></span>
+                                </span>
+                                <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
+                                    <span className="w-10 h-10 bg-[#35E1C2] rounded-full"></span>
+                                </span>
+                                <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
+                                    <span className="w-10 h-10 bg-[#FF5EAB] rounded-full"></span>
+                                </span>
+                                <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
+                                    <span className="w-10 h-10 bg-[#2C3C3A] rounded-full"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div className="flex flex-col w-full h-[329px] gap-6 ">
+                            <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
+                                pack saveur
+                            </span>
+                            <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                Choisissez votre pack de saveurs
+                            </span>
+                            <div className="flex flex-col gap-0.5">
+                                <div className="flex flex-row border border-[#30171B] items-center p-6 gap-2">
+                                    <div className="flex flex-1 flex-col gap-2">
+                                        <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
+                                            Pack Starter
+                                        </span>
+                                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
+                                            3 saveurs de découverte
+                                        </span>
+                                    </div>
+                                    <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                        Offert
+                                    </span>
+                                </div>
+                                <div className="flex flex-row items-center p-6 gap-2">
+                                    <div className="flex flex-1 flex-col gap-2">
+                                        <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
+                                            Pack Suçoteur
+                                        </span>
+                                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
+                                            6 saveurs
+                                        </span>
+                                    </div>
+                                    <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                        29€
+                                    </span>
+                                </div>
+                                <div className="flex flex-row items-center p-6 gap-2">
+                                    <div className="flex flex-1 flex-col gap-2">
+                                        <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
+                                            Pack Suçoteur Pro
+                                        </span>
+                                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
+                                            12 saveurs + 1 jus de Mynthos
+                                        </span>
+                                    </div>
+                                    <div className="flex flex-row gap-2">
+                                        <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                            60€
+                                        </span>
+                                        <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                            49€
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                {/* side element */}
-                <div className="absolute top-[230px] right-[240px] flex flex-col w-[392px] h-[1136px] justify-between ">
-                    <div className="flex flex-col justify-center items-center w-[382px] h-[169px] gap-8">
-                        <span class="w-full font-tartuffo font-regular text-[64px] leading-[90%] text-[#30171B]">
-                            personnalisez votre tototte
-                        </span>
-                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
-                            Vous allez créer la tototte idéale pour vous. À chacun son expérience, à chacun sa tototte.
-                        </span>
-                    </div>
-                    <div className="flex flex-col justify-center w-[382px] h-[169px] gap-6">
-                        <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
-                            finition
-                        </span>
-                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
-                            Choisissez votre favorite
-                        </span>
-                        <div className="flex flex-row w-[216px] h-12 gap-2">
-                            <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
-                                <span className="w-10 h-10 rounded-full" style={{ background: 'linear-gradient(132.51deg, #FFE7DB 0%, #EECDBF 96.01%)' }}></span>
-                            </span>
-                            <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
-                                <span className="w-10 h-10 rounded-full" style={{ background: 'linear-gradient(132.51deg, #DBF2FF 0%, #BFC7EE 96.01%)' }}></span>
-                            </span>
-                            <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
-                                <span className="w-10 h-10 rounded-full" style={{ background: 'linear-gradient(132.51deg, #F6F6F6 0%, #D8D8D8 96.01%)' }}></span>
-                            </span>
-                            <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
-                                <span className="w-10 h-10 rounded-full" style={{ background: 'linear-gradient(132.51deg, #99969F 0%, #484848 96.01%)' }}></span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="flex flex-col justify-center w-[382px] h-[169px] gap-6">
-                        <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
-                            ornement
-                        </span>
-                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
-                            Choisissez votre pierre précieuse
-                        </span>
-                        <div className="flex flex-row w-[216px] h-12 gap-2">
-                            <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
-                                <span className="w-10 h-10 bg-[#017AD7] rounded-full"></span>
-                            </span>
-                            <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
-                                <span className="w-10 h-10 bg-[#35E1C2] rounded-full"></span>
-                            </span>
-                            <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
-                                <span className="w-10 h-10 bg-[#FF5EAB] rounded-full"></span>
-                            </span>
-                            <span className="w-12 h-12 flex justify-center items-center border border-[#30171B] rounded-full">
-                                <span className="w-10 h-10 bg-[#2C3C3A] rounded-full"></span>
-                            </span>
-                        </div>
-                    </div>
-                    <div className="flex flex-col w-full h-[329px] gap-6 ">
-                        <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
-                            pack saveur
-                        </span>
-                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
-                            Choisissez votre pack de saveurs
-                        </span>
-                        <div className="flex flex-col gap-0.5">
-                            <div className="flex flex-row border border-[#30171B] items-center p-6 gap-2">
-                                <div className="flex flex-1 flex-col gap-2">
-                                    <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
-                                        Pack Starter
-                                    </span>
-                                    <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
-                                        3 saveurs de découverte
-                                    </span>
-                                </div>
-                                <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
-                                    Offert
-                                </span>
-                            </div>
-                            <div className="flex flex-row items-center p-6 gap-2">
-                                <div className="flex flex-1 flex-col gap-2">
-                                    <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
-                                        Pack Suçoteur
-                                    </span>
-                                    <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
-                                        6 saveurs
-                                    </span>
-                                </div>
-                                <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
-                                    29€
-                                </span>
-                            </div>
-                            <div className="flex flex-row items-center p-6 gap-2">
-                                <div className="flex flex-1 flex-col gap-2">
-                                    <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
-                                        Pack Suçoteur Pro
-                                    </span>
-                                    <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
-                                        12 saveurs + 1 jus de Mynthos
-                                    </span>
-                                </div>
-                                <div className="flex flex-row gap-2">
-                                    <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
-                                        60€
-                                    </span>
-                                    <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
-                                        49€
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 {/* Footer */}
                 <div className="absolute left-0 bottom-0 w-full h-[982px] bg-[#30171B] ">
