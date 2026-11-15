@@ -21,14 +21,14 @@ export function Header() {
 
     return (
         <motion.div 
-            className={`fixed top-0 left-0 px-[240px] w-full z-20 ${
+            className={`fixed top-0 left-0 px-6 md:px-10 lg:px-[clamp(32px,calc(50vw-480px),240px)] w-full z-20 ${
                 isFooterVisible ? 'bg-[linear-gradient(to_bottom,white_45%,transparent_100%)]' : ''
             }`}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className="flex flex-row w-full h-[118px] items-center justify-between">
+            <div className="flex flex-row w-full h-[72px] md:h-[96px] lg:h-[118px] items-center justify-between">
                 <motion.span
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}

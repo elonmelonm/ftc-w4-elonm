@@ -4,21 +4,21 @@ import Img3 from '../assets/1d771cc31278fe9451d9976a5a7fb55b171936a8.png'
 
 export function Testimonials() {
     return (
-        <div className="relative flex flex-row justify-center h-[1120px] pt-[132px] pb-[220px] gap-[65px]">
-            <div className="flex flex-col w-full h-full justify-center items-center gap-12">
-                <div className="flex flex-col justify-center items-center w-[382px] h-[169px] gap-8">
-                    <span class="w-full font-tartuffo font-regular text-[64px] leading-[90%] text-[#30171B]">
+        <div className="relative flex flex-row justify-center px-6 py-24 md:px-10 lg:px-0 md:h-[1120px] md:pt-[132px] md:pb-[220px] gap-[65px]">
+            <div className="flex flex-col w-full h-full justify-center items-center gap-16 md:gap-12">
+                <div className="flex flex-col justify-center items-center w-full md:w-[382px] md:h-[169px] gap-8">
+                    <span className="w-full max-md:max-w-[270px] max-md:self-start font-tartuffo font-regular text-[44px] md:text-[64px] leading-[90%] text-[#30171B]">
                         ils ont suçotés, ils ont adorés
                     </span>
-                    <span class="w-full font-gustavo font-regular text-[14px] leading-[170%] text-[#816A6C]">
+                    <span className="w-full font-gustavo font-regular text-[14px] leading-[170%] text-[#816A6C]">
                         Nos totottes sont utilisées par les plus grands de ce monde et si vous voulez mon avis ce n’est pas un hasard
                     </span>
                 </div>
-                <div className="grid grid-row grid-cols-3 justify-center items-center w-[960px] h-[551px] gap-[120px] ">
-                    <div className="flex flex-col w-[240px] min-h-[301px] pt-[112px] gap-6">
+                <div className="grid grid-row grid-cols-1 md:grid-cols-3 justify-center items-center w-full lg:w-[960px] md:h-[551px] gap-14 md:gap-6 lg:gap-[120px] ">
+                    <div className="flex flex-col w-[240px] md:w-auto lg:w-[240px] md:min-h-[301px] md:pt-[112px] gap-6">
                         <img className="w-[176px] h-[176px] rounded-full object-cover " src={Img1} alt="" />
-                        <div className="flex flex-col w-full h-12 gap-4">
-                            <span class="min-w-[100px] font-tartuffo font-regular text-[20px] leading-[90%] text-[#30171B]">
+                        <div className="flex flex-col w-full md:h-12 gap-4">
+                            <span className="min-w-[100px] font-tartuffo font-regular text-[20px] leading-[90%] text-[#30171B]">
                                 /Baghera Jones
                             </span>
                             <div className="flex flex-row min-w-[91px] items-center gap-1">
@@ -26,21 +26,21 @@ export function Testimonials() {
                                     <path d="M7.76044 3.95337H8.71378V6.80671H7.76044M10.3804 3.95337H11.3338V6.80671H10.3804M4.66711 1.33337L2.28711 3.71337V12.2867H5.14044V14.6667L7.52711 12.2867H9.42711L13.7138 8.00004V1.33337M12.7604 7.52671L10.8604 9.42671H8.95378L7.28711 11.0934V9.42671H5.14044V2.28671H12.7604V7.52671Z" fill="#30171B"/>
                                 </svg>
 
-                                <span class="w-full font-gustavo font-medium text-[14px] leading-[150%] text-[#30171B]">
+                                <span className="w-full font-gustavo font-medium text-[14px] leading-[150%] text-[#30171B]">
                                     Streamer
                                 </span>
 
                             </div>
 
-                            <span class="w-full font-gustavo font-regular text-[14px] leading-[170%] text-[#816A6C]">
+                            <span className="w-full font-gustavo font-regular text-[14px] leading-[170%] text-[#816A6C]">
                                 J’ai arrêté de vape depuis que j’ai découvert <span className="font-tartuffo text-[#30171B]">the french tototte®</span>
                             </span>
                         </div>
                     </div>
-                    <div className="flex flex-col w-[240px] min-h-[301px] pt-[229px] gap-6">
+                    <div className="flex flex-col max-md:justify-self-end w-[240px] md:w-auto lg:w-[240px] md:min-h-[301px] md:pt-[229px] gap-6">
                         <img className="w-[176px] h-[176px] rounded-full object-cover " src={Img2} alt="" />
-                        <div className="flex flex-col w-full h-12 gap-4">
-                            <span class="min-w-[100px] font-tartuffo font-regular text-[20px] leading-[90%] text-[#30171B]">
+                        <div className="flex flex-col w-full md:h-12 gap-4">
+                            <span className="min-w-[100px] font-tartuffo font-regular text-[20px] leading-[90%] text-[#30171B]">
                                 /Joueur_du_Grenier
                             </span>
                             <div className="flex flex-row min-w-[91px] items-center gap-1">
@@ -49,21 +49,21 @@ export function Testimonials() {
                                 </svg>
 
 
-                                <span class="w-full font-gustavo font-medium text-[14px] leading-[150%] text-[#30171B]">
+                                <span className="w-full font-gustavo font-medium text-[14px] leading-[150%] text-[#30171B]">
                                     YouTuber
                                 </span>
 
                             </div>
 
-                            <span class="w-full font-gustavo font-regular text-[14px] leading-[170%] text-[#816A6C]">
+                            <span className="w-full font-gustavo font-regular text-[14px] leading-[170%] text-[#816A6C]">
                                 J’ai commandé un pack pour toute la famille et même mon fils Légolas San Goku adore sa <span className="font-tartuffo text-[#30171B]">the french tototte®</span>
                             </span>
                         </div>
                     </div>
-                    <div className="flex flex-col w-[240px] min-h-[301px] gap-6">
+                    <div className="flex flex-col w-[240px] md:w-auto lg:w-[240px] md:min-h-[301px] gap-6">
                         <img className="w-[176px] h-[176px] rounded-full object-cover " src={Img3} alt="" />
-                        <div className="flex flex-col w-full h-12 gap-4">
-                            <span class="min-w-[100px] font-tartuffo font-regular text-[20px] leading-[90%] text-[#30171B]">
+                        <div className="flex flex-col w-full md:h-12 gap-4">
+                            <span className="min-w-[100px] font-tartuffo font-regular text-[20px] leading-[90%] text-[#30171B]">
                                 /Etoiles
                             </span>
                             <div className="flex flex-row min-w-[91px] items-center gap-1">
@@ -71,13 +71,13 @@ export function Testimonials() {
                                     <path d="M7.76044 3.95337H8.71378V6.80671H7.76044M10.3804 3.95337H11.3338V6.80671H10.3804M4.66711 1.33337L2.28711 3.71337V12.2867H5.14044V14.6667L7.52711 12.2867H9.42711L13.7138 8.00004V1.33337M12.7604 7.52671L10.8604 9.42671H8.95378L7.28711 11.0934V9.42671H5.14044V2.28671H12.7604V7.52671Z" fill="#30171B"/>
                                 </svg>
 
-                                <span class="w-full font-gustavo font-medium text-[14px] leading-[150%] text-[#30171B]">
+                                <span className="w-full font-gustavo font-medium text-[14px] leading-[150%] text-[#30171B]">
                                     Streamer
                                 </span>
 
                             </div>
 
-                            <span class="w-full font-gustavo font-regular text-[14px] leading-[170%] text-[#816A6C]">
+                            <span className="w-full font-gustavo font-regular text-[14px] leading-[170%] text-[#816A6C]">
                                 Grâce à <span className="font-tartuffo text-[#30171B]">the french tototte®</span> je régule mon taux d’insuline parfaitement et je n’achète plus de saumon ni de nutella !
                             </span>
                         </div>

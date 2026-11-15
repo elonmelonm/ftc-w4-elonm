@@ -3,28 +3,28 @@ import VideoPlugNTote from "../assets/f81746b3d40a398606f712a61a120482eea32cae.g
 export function PlugNTote() {
     return (
         <>
-            <div className="relative min-h-[1353px] flex flex-col justify-center items-center">
-                <div className="relative w-[720px] h-[516px]">
+            <div className="relative lg:min-h-[1353px] flex flex-col justify-center items-center">
+                <div className="relative w-full max-w-[720px] aspect-[720/516] md:w-[720px] md:h-[516px]">
                     <img 
                         src={VideoPlugNTote} 
                         alt="Plug N Tote Animation"
-                        className="w-[720px] h-[720px] absolute -10" 
+                        className="w-full aspect-square md:w-[720px] md:h-[720px] absolute -10" 
                     />
-                    <span className="absolute top-[116px] w-[720px] h-[400px] z-0" style={{ background: 'linear-gradient(270deg, #FAF6F3 -3%, rgb(0, 0, 0, 0) 30%, #FAF6F3 100%' }}></span>
+                    <span className="absolute top-[22.5%] w-full h-[77.5%] md:top-[116px] md:w-[720px] md:h-[400px] z-0" style={{ background: 'linear-gradient(270deg, #FAF6F3 -3%, rgb(0, 0, 0, 0) 30%, #FAF6F3 100%' }}></span>
                 </div>
                 <div className="relative items-center flex flex-1 flex-col w-full bg-[#D4C2B800] gap-[33px]">
-                    <div className="relative flex flex-col gap-20 w-full h-[523px] pt-[143px] justify-center items-center " style={{ background: 'radial-gradient(72.32% 75.14% at 50.9% 0%, #D4C2B8 0%, rgba(212, 194, 184, 0) 100%)' }}>
-                        <div className="flex flex-row gap-[55px]">
-                            <div className="flex flex-col w-[304px] h-hull gap-10">
-                                <span class="w-[284px] min-h-[143px] font-tartuffo text-[64px] text-center leading-[90%] text-[#5D4043]">
+                    <div className="relative flex flex-col gap-12 md:gap-20 w-full px-6 pt-20 pb-12 md:px-0 md:pb-0 md:h-[523px] md:pt-[143px] justify-center items-center " style={{ background: 'radial-gradient(72.32% 75.14% at 50.9% 0%, #D4C2B8 0%, rgba(212, 194, 184, 0) 100%)' }}>
+                        <div className="flex flex-col items-center md:items-stretch md:flex-row gap-6 md:gap-[55px] max-md:w-full">
+                            <div className="flex flex-col w-full max-w-[304px] md:w-[304px] h-hull gap-8 md:gap-10">
+                                <span className="w-full md:w-[284px] md:min-h-[143px] font-tartuffo text-[48px] md:text-[64px] text-center leading-[90%] text-[#5D4043]">
                                     technologie plug’n’tote
                                 </span>
-                                <span class="w-full min-h-[143px] font-gustavo text-[15px] leading-[170%] text-[#816A6C]">
+                                <span className="w-full md:min-h-[143px] font-gustavo text-[15px] leading-[170%] text-[#816A6C]">
                                     La tototte est équipée de la <span className="font-bold text-[#30171B]">technologie plug'n'tote</span>, permettant de changer de plug à volonté, offrant ainsi un accès à une <span className="font-bold text-[#30171B]">gamme infinie de saveurs de suçotage</span>  pour satisfaire tous les goûts.
                                 </span>
                             </div>
-                            <div className="relative flex flex-col w-[304px] gap-10">
-                                <span class="absolute bottom-[52px] w-full min-h-10 font-gustavo text-[15px] leading-[170%] text-[#816A6C]">
+                            <div className="relative flex flex-col w-full max-w-[304px] md:w-[304px] gap-10">
+                                <span className="md:absolute md:bottom-[52px] w-full min-h-10 font-gustavo text-[15px] leading-[170%] text-[#816A6C]">
                                     Cette technologie vous permet de changer en un clin d’œil de saveur pour  <span className="font-bold text-[#30171B]">voyager du bout des lèvres.</span>
                                 </span>
                             </div>
@@ -33,7 +33,7 @@ export function PlugNTote() {
                             Découvrir les saveurs
                         </button>
                     </div>
-                    <div className=" w-[1px] h-[400px] left-[calc(50%-1px/2-0.5px)]  
+                    <div className=" w-[1px] h-[180px] md:h-[400px] left-[calc(50%-1px/2-0.5px)]  
                         bg-[linear-gradient(180deg,#513E40_0%,rgba(183,140,145,0)_100%)]">
                     </div>
                 </div>

@@ -11,9 +11,9 @@ import Plug8 from "../assets/53a6cd3d612b2a82e6887fe6b7be2d7208d4b6c3.png"
 export function Plug() {
     return (
         <>
-            <div className="relative pt-[72px] min-h-[851px] flex flex-col justify-cente items-center">
-                <div className="flex w-[1178px] h-[217px] justify-center items-center">
-                    <div className="grid grid-cols-8 w-[720px] h-[200px]">
+            <div className="relative pt-[72px] min-h-[740px] md:min-h-[851px] flex flex-col justify-cente items-center">
+                <div className="flex w-full lg:w-[1178px] h-[217px] md:justify-center items-center max-md:overflow-x-auto max-md:[scrollbar-width:none]">
+                    <div className="grid grid-cols-8 shrink-0 max-md:mx-6 w-[720px] h-[200px]">
                         <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
                             <img src={Plug1} alt="" />
                         </div>
@@ -40,28 +40,28 @@ export function Plug() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute top-[250px] w-[1178px] h-[217px] pt-[138px]" style={{ background: 'radial-gradient(53.35% 53.35% at 50% 0%, #D3BFB0 0%, rgba(235, 224, 216, 0) 100%)' }}>
-                    <div className="flex flex-row justify-center items-center gap-[65px]">
-                        <div className="flex flex-row gap-12">
+                <div className="absolute top-[250px] w-full lg:w-[1178px] max-md:px-6 h-[217px] pt-[138px]" style={{ background: 'radial-gradient(53.35% 53.35% at 50% 0%, #D3BFB0 0%, rgba(235, 224, 216, 0) 100%)' }}>
+                    <div className="flex flex-col items-start md:flex-row justify-center md:items-center gap-10 md:gap-[65px]">
+                        <div className="flex flex-row gap-4 md:gap-12">
                             <div className="flex flex-col w-[120px] gap-6">
-                                <span class="w-[80px] min-h-[38px] font-gustavo font-bold text-[56px] leading-[90%] text-[#30171B]">
+                                <span className="w-[80px] min-h-[38px] font-gustavo font-bold text-[56px] leading-[90%] text-[#30171B]">
                                     30
                                 </span>
-                                <span class="w-full  font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
+                                <span className="w-full  font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
                                     Saveurs disponibles 
                                 </span>
                             </div>
                             <div className="flex flex-col w-[120px] gap-6">
-                                <span class="w-[80px] min-h-[38px] font-gustavo font-bold text-[56px] leading-[90%] text-[#30171B]">
+                                <span className="w-[80px] min-h-[38px] font-gustavo font-bold text-[56px] leading-[90%] text-[#30171B]">
                                     11
                                 </span>
-                                <span class="w-full font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
+                                <span className="w-full font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
                                     Vertus médicinales 
                                 </span>
                             </div>
                         </div>
-                        <div className="flex flex-row">
-                            <span class="w-[304px] min-h-[62px] font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
+                        <div className="flex flex-row max-md:w-full">
+                            <span className="w-[304px] max-w-full min-h-[62px] font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
                                 Laissez-vous tenter par les saveurs des différents plugs et .
                                 <span className="font-bold text-[#30171B]">découvrez un monde de délices</span> pour chaque envie.
                             </span>

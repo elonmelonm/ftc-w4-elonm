@@ -17,12 +17,12 @@ export function BuyFooter() {
     
     return (
         <>
-            <div className="relative w-full h-[2528px]">
-                <div className="flex flex-row h-full px-[240px] gap-[88px]">
+            <div className="relative w-full lg:h-[2528px]">
+                <div className="flex flex-col lg:flex-row h-full px-6 md:px-10 lg:px-[clamp(32px,calc(50vw-480px),240px)] gap-14 lg:gap-[88px]">
 
                     {/* slider */}
-                    <div className="sticky top-[230px] z-10 h-[770px] flex flex-1 items-en">
-                        <div className="relative w-full h-[540px] rounded-[8px] bg-red-500">
+                    <div className="lg:sticky lg:top-[230px] z-10 lg:h-[770px] flex lg:flex-1 max-lg:w-full max-lg:max-w-[480px] max-lg:mx-auto items-en">
+                        <div className="relative w-full max-lg:aspect-[8/9] lg:h-[540px] rounded-[8px] bg-red-500">
                             <div className="relative w-full h-full rounded-[8px] overflow-hidden">
                                 {/* track */}
                                 <div
@@ -37,7 +37,7 @@ export function BuyFooter() {
                             {/* left arrow */}
                             <button 
                                 onClick={handlePrevClick}
-                                className="absolute top-[250px] z-10 left-4 flex justify-center items-center w-10 h-10 rounded-full bg-white opacity-[50%] cursor-pointer hover:opacity-100"
+                                className="absolute top-1/2 -translate-y-1/2 lg:top-[250px] lg:translate-y-0 z-10 left-4 flex justify-center items-center w-10 h-10 rounded-full bg-white opacity-[50%] cursor-pointer hover:opacity-100"
                                 >
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" clipRule="evenodd" d="M8.70707 12L14.3535 6.35353L13.6464 5.64642L7.29286 12L13.6464 18.3535L14.3535 17.6464L8.70707 12Z" fill="#30171B"/>
@@ -46,7 +46,7 @@ export function BuyFooter() {
                             {/* right arrow */}
                             <button 
                                 onClick={handleNextClick}
-                                className="absolute top-[250px] z-10 right-4 flex justify-center items-center w-10 h-10 rounded-full bg-white opacity-[50%] cursor-pointer hover:opacity-100"
+                                className="absolute top-1/2 -translate-y-1/2 lg:top-[250px] lg:translate-y-0 z-10 right-4 flex justify-center items-center w-10 h-10 rounded-full bg-white opacity-[50%] cursor-pointer hover:opacity-100"
                                 >
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fillRule="evenodd" clipRule="evenodd" d="M15.2929 12L9.64648 6.35359L10.3536 5.64648L16.7071 12L10.3536 18.3536L9.64648 17.6465L15.2929 12Z" fill="#30171B"/>
@@ -65,20 +65,20 @@ export function BuyFooter() {
                         </div>
                     </div>
                     {/* side element */}
-                    <div className="flex flex-col w-[392px] h-[1136px] justify-between ">
-                        <div className="flex flex-col justify-center items-center w-[382px] h-[169px] gap-8">
-                            <span class="w-full font-tartuffo font-regular text-[64px] leading-[90%] text-[#30171B]">
+                    <div className="flex flex-col max-lg:gap-14 w-full lg:w-[392px] lg:h-[1136px] justify-between ">
+                        <div className="flex flex-col justify-center items-center w-full lg:w-[382px] lg:h-[169px] gap-8">
+                            <span className="w-full font-tartuffo font-regular text-[48px] lg:text-[64px] leading-[90%] text-[#30171B]">
                                 personnalisez votre tototte
                             </span>
-                            <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                            <span className="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                 Vous allez créer la tototte idéale pour vous. À chacun son expérience, à chacun sa tototte.
                             </span>
                         </div>
-                        <div className="flex flex-col justify-center w-[382px] h-[169px] gap-6">
-                            <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
+                        <div className="flex flex-col justify-center w-full lg:w-[382px] lg:h-[169px] gap-6">
+                            <span className="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
                                 finition
                             </span>
-                            <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                            <span className="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                 Choisissez votre favorite
                             </span>
                             <div className="flex flex-row w-[216px] h-12 gap-2">
@@ -96,11 +96,11 @@ export function BuyFooter() {
                                 </span>
                             </div>
                         </div>
-                        <div className="flex flex-col justify-center w-[382px] h-[169px] gap-6">
-                            <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
+                        <div className="flex flex-col justify-center w-full lg:w-[382px] lg:h-[169px] gap-6">
+                            <span className="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
                                 ornement
                             </span>
-                            <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                            <span className="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                 Choisissez votre pierre précieuse
                             </span>
                             <div className="flex flex-row w-[216px] h-12 gap-2">
@@ -118,54 +118,54 @@ export function BuyFooter() {
                                 </span>
                             </div>
                         </div>
-                        <div className="flex flex-col w-full h-[329px] gap-6 ">
-                            <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
+                        <div className="flex flex-col w-full lg:h-[329px] gap-6 ">
+                            <span className="w-full font-tartuffo font-regular text-[40px] leading-[90%] text-[#30171B]">
                                 pack saveur
                             </span>
-                            <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                            <span className="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                 Choisissez votre pack de saveurs
                             </span>
                             <div className="flex flex-col gap-0.5">
-                                <div className="flex flex-row border border-[#30171B] items-center p-6 gap-2">
+                                <div className="flex flex-row border border-[#30171B] items-center p-4 md:p-6 gap-2">
                                     <div className="flex flex-1 flex-col gap-2">
-                                        <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
+                                        <span className="w-full font-gustavo font-bold text-[18px] md:text-[20px] leading-[170%] text-[#30171B]">
                                             Pack Starter
                                         </span>
-                                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
+                                        <span className="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
                                             3 saveurs de découverte
                                         </span>
                                     </div>
-                                    <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                    <span className="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                         Offert
                                     </span>
                                 </div>
-                                <div className="flex flex-row items-center p-6 gap-2">
+                                <div className="flex flex-row items-center p-4 md:p-6 gap-2">
                                     <div className="flex flex-1 flex-col gap-2">
-                                        <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
+                                        <span className="w-full font-gustavo font-bold text-[18px] md:text-[20px] leading-[170%] text-[#30171B]">
                                             Pack Suçoteur
                                         </span>
-                                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
+                                        <span className="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
                                             6 saveurs
                                         </span>
                                     </div>
-                                    <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                    <span className="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                         29€
                                     </span>
                                 </div>
-                                <div className="flex flex-row items-center p-6 gap-2">
+                                <div className="flex flex-row items-center p-4 md:p-6 gap-2">
                                     <div className="flex flex-1 flex-col gap-2">
-                                        <span class="w-full font-gustavo font-bold text-[20px] leading-[170%] text-[#30171B]">
+                                        <span className="w-full font-gustavo font-bold text-[18px] md:text-[20px] leading-[170%] text-[#30171B]">
                                             Pack Suçoteur Pro
                                         </span>
-                                        <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
+                                        <span className="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#30171B]">
                                             12 saveurs + 1 jus de Mynthos
                                         </span>
                                     </div>
                                     <div className="flex flex-row gap-2">
-                                        <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                        <span className="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                             60€
                                         </span>
-                                        <span class="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                        <span className="w-[47px] font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                             49€
                                         </span>
                                     </div>
@@ -177,87 +177,87 @@ export function BuyFooter() {
 
 
                 {/* Footer */}
-                <div className="absolute left-0 bottom-0 w-full h-[982px] bg-[#30171B] ">
-                    <div className="relative w-full h-full">
-                        <div className="absolute top-[75px] right-[240px] text-white flex flex-col w-[392px] h-[612px] gap-12">
+                <div className="relative lg:absolute left-0 bottom-0 w-full lg:h-[982px] bg-[#30171B] max-lg:mt-20 max-lg:overflow-clip ">
+                    <div className="relative w-full h-full max-lg:flex max-lg:flex-col max-lg:gap-16 max-lg:px-6 max-lg:pt-16 max-lg:pb-12 md:max-lg:px-10">
+                        <div className="relative max-lg:z-10 lg:absolute lg:top-[75px] lg:right-[clamp(32px,calc(50vw-480px),240px)] text-white flex flex-col w-full md:w-[392px] md:max-lg:ml-auto lg:h-[612px] gap-12">
                             <div className="flex flex-col w-full gap-6">
-                                <span class="w-full font-tartuffo font-regular text-[40px] leading-[90%] ">
+                                <span className="w-full font-tartuffo font-regular text-[40px] leading-[90%] ">
                                     votre panier est prêt
                                 </span>
-                                <span class="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
+                                <span className="w-full font-gustavo font-regular text-[15px] leading-[170%] text-[#816A6C]">
                                     Récapitulatif de votre commande
                                 </span>
                             </div>
 
                             <div className="flex flex-col w-full min-h-[150px] font-gustavo font-regular text-[15px] leading-[125%] gap-6">
                                 <div className="flex flex-row w-full h-full">
-                                    <span class="w-full  ">
+                                    <span className="w-full  ">
                                         1 x thefrenchtototte <br />
                                         +  Finition argent <br />
                                         +  Ornement obsidiennes <br />
                                     </span>
-                                    <span class="flex justify-end min-w-[60px]  ">
+                                    <span className="flex justify-end min-w-[60px]  ">
                                         99,00 €
                                     </span>
                                 </div>
                                 <div className="flex flex-row w-full h-full justify-between gap-6 ">
-                                    <span class="w-full  ">
+                                    <span className="w-full  ">
                                         1 x Pack Suçoteur Pro
                                     </span>
-                                    <span class="flex justify-end min-w-[60px]  ">
+                                    <span className="flex justify-end min-w-[60px]  ">
                                         49,00 €
                                     </span>
                                 </div>
                                 <div className="flex flex-row w-full h-full justify-between gap-6 ">
-                                    <span class="w-full  ">
+                                    <span className="w-full  ">
                                         Livraison
                                     </span>
-                                    <span class="flex justify-end min-w-[60px]  ">
+                                    <span className="flex justify-end min-w-[60px]  ">
                                         Offerte
                                     </span>
                                 </div>
                                 <div className="flex flex-row w-full h-full justify-between gap-6 ">
-                                    <span class="w-full  ">
+                                    <span className="w-full  ">
                                         Prix
                                     </span>
-                                    <span class="flex justify-end min-w-[70px]">
+                                    <span className="flex justify-end min-w-[70px]">
                                         148,00 €
                                     </span>
                                 </div>
                             </div>
                             <div className="flex flex-col w-full min-h-6 font-gustavo font-regular text-[15px] leading-[125%] gap-6">
-                                <div className="flex flex-row w-full h-full justify-between items-center ">
-                                    <span class="min-w-[137px]  ">
+                                <div className="flex flex-row w-full h-full justify-between items-center max-lg:gap-3 ">
+                                    <span className="lg:min-w-[137px]  ">
                                         Retrait en magasin
                                     </span>
-                                    <span class="flex flex-1 justify-end items-center min-w-[70px] gap-1 ">
-                                        <span class="flex justify-end min-w-[137px]  ">
+                                    <span className="flex max-lg:shrink-0 lg:flex-1 justify-end items-center min-w-[70px] gap-1 max-lg:[&>svg]:shrink-0 ">
+                                        <span className="flex justify-end max-lg:whitespace-nowrap lg:min-w-[137px]  ">
                                             Tototte Store Lille
                                         </span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15.2929L17.6464 9.64648L18.3535 10.3536L12 16.7071L5.64641 10.3536L6.35352 9.64648L12 15.2929Z" fill="white" />
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M12 15.2929L17.6464 9.64648L18.3535 10.3536L12 16.7071L5.64641 10.3536L6.35352 9.64648L12 15.2929Z" fill="white" />
                                         </svg>
 
                                     </span>
                                 </div>
-                                <div className="flex flex-row w-full h-full justify-between items-center ">
-                                    <span class="min-w-[137px]  ">
+                                <div className="flex flex-row w-full h-full justify-between items-center max-lg:gap-3 ">
+                                    <span className="lg:min-w-[137px]  ">
                                         Commandez avant 17h
                                     </span>
-                                    <span class="flex flex-1 justify-end items-center min-w-[70px] gap-1 ">
-                                        <span class="flex justify-end min-w-[137px]  ">
+                                    <span className="flex max-lg:shrink-0 lg:flex-1 justify-end items-center min-w-[70px] gap-1 max-lg:[&>svg]:shrink-0 ">
+                                        <span className="flex justify-end max-lg:whitespace-nowrap lg:min-w-[137px]  ">
                                             Livrer à 59000
                                         </span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 5.5H19.5V18.5H4.5V5.5ZM9.5 17.5H11.5V13.5H9.5V17.5ZM12.5 17.5H14.5V13.5H12.5V17.5ZM15.5 17.5V12.5H8.5V17.5H5.5V10.814C6.47082 11.1853 7.5679 11.1085 8.48649 10.5836L8.5 10.5759L8.51351 10.5836C9.58953 11.1985 10.9105 11.1985 11.9865 10.5836L12 10.5759L12.0135 10.5836C13.0895 11.1985 14.4105 11.1985 15.4865 10.5836L15.5 10.5759L15.5135 10.5836C16.4321 11.1085 17.5292 11.1853 18.5 10.814V17.5H15.5ZM18.5 6.5V9.70984L18.4903 9.71535C17.7218 10.1545 16.7782 10.1545 16.0097 9.71535L15.5 9.42412L14.9903 9.71535C14.2218 10.1545 13.2782 10.1545 12.5097 9.71535L12 9.42412L11.4903 9.71535C10.7218 10.1545 9.77823 10.1545 9.00965 9.71535L8.5 9.42412L7.99035 9.71535C7.22177 10.1545 6.27823 10.1545 5.50965 9.71535L5.5 9.70984V6.5H18.5Z" fill="white" />
+                                            <path fillRule="evenodd" clipRule="evenodd" d="M4.5 5.5H19.5V18.5H4.5V5.5ZM9.5 17.5H11.5V13.5H9.5V17.5ZM12.5 17.5H14.5V13.5H12.5V17.5ZM15.5 17.5V12.5H8.5V17.5H5.5V10.814C6.47082 11.1853 7.5679 11.1085 8.48649 10.5836L8.5 10.5759L8.51351 10.5836C9.58953 11.1985 10.9105 11.1985 11.9865 10.5836L12 10.5759L12.0135 10.5836C13.0895 11.1985 14.4105 11.1985 15.4865 10.5836L15.5 10.5759L15.5135 10.5836C16.4321 11.1085 17.5292 11.1853 18.5 10.814V17.5H15.5ZM18.5 6.5V9.70984L18.4903 9.71535C17.7218 10.1545 16.7782 10.1545 16.0097 9.71535L15.5 9.42412L14.9903 9.71535C14.2218 10.1545 13.2782 10.1545 12.5097 9.71535L12 9.42412L11.4903 9.71535C10.7218 10.1545 9.77823 10.1545 9.00965 9.71535L8.5 9.42412L7.99035 9.71535C7.22177 10.1545 6.27823 10.1545 5.50965 9.71535L5.5 9.70984V6.5H18.5Z" fill="white" />
                                         </svg>
                                     </span>
                                 </div>
-                                <div className="flex flex-col w-full h-[182px] justify-between items-center gap-4 ">
+                                <div className="flex flex-col w-full lg:h-[182px] justify-between items-center gap-4 ">
                                     <button className="flex justify-center items-center py-4 px-6 w-full h-10 bg-[#5D4043]">
                                         Ajouter au Panier
                                     </button>
-                                    <span class="justify-end w-full text-[9px] leading-[130%] text-[#816A6C]  ">
+                                    <span className="justify-end w-full text-[9px] leading-[130%] text-[#816A6C]  ">
                                         The French Tototte est couverte par une garantie limitée contre les défauts de fabrication pour
                                         une période de 2 mois à compter de la date d'achat. Cette garantie ne couvre pas
                                         les dommages causés par une mauvaise utilisation, une négligence ou une modification
@@ -273,7 +273,7 @@ export function BuyFooter() {
                             </div>
                         </div>
 
-                        <div className="absolute left-1/2 -translate-x-1/2 bottom-14 flex flex-row w-max h-[73px] gap-6">
+                        <div className="flex flex-col max-lg:relative max-lg:z-10 lg:flex-row lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:bottom-14 lg:w-max lg:max-[1439px]:w-[calc(100%-64px)] lg:h-[73px] gap-6">
                             <div className="flex flex-col gap-2">
                                 <div className="flex flex-row gap-2 5">
                                     <button className='cursor-pointer'>
@@ -304,7 +304,7 @@ export function BuyFooter() {
                                     </button>
                                 </div>
                                 <div className="flex gap-[5px] text-[#816A6C]">
-                                    <span class="w-[376px] h-[41px] font-tartuffo text-[55px] text-center leading-[90%] ">
+                                    <span className="lg:w-[376px] lg:h-[41px] font-tartuffo text-[clamp(36px,11.5vw,55px)] lg:text-[55px] text-center leading-[90%] ">
                                         the french tototte
                                     </span>
                                     <span className="flex mt-[15px] ">
@@ -312,14 +312,14 @@ export function BuyFooter() {
                                     </span>
                                 </div>
                             </div>
-                            <div className="flex flex-col justify-end font-gustavo leading-[100%] text-[13px] text-[#816A6C] gap-2">
+                            <div className="flex flex-col justify-end font-gustavo leading-[100%] max-[1439px]:leading-[140%] text-[13px] text-[#816A6C] gap-2">
                                 <span className="w-full">Copyright © 2024 TheFrenchTototte. Tous droits réservés  <span className='text-[#5D4043] '>— Utilisation des cookies — Mention légales.</span></span>
                                 <span className="w-full">Sur une idée originale d’Antoine Daniel, concept art par Tera Silver, 3D par Aurélien Thomas, logo par Baloprisonnier, 3D print par Lunath & Packaging par Illusion</span>
                             </div>
                         </div>
 
 
-                        <img src={Img1} className='absolute bottom-0 left-0 ' alt="" />
+                        <img src={Img1} className='absolute bottom-0 left-0 pointer-events-none max-lg:w-[220px] ' alt="" />
                     </div>
                 </div>
             </div>

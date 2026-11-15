@@ -15,8 +15,8 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#FAF6F3]">
-        <div className="relative flex flex-col h-[1460px]">
+      <div className="bg-[#FAF6F3] overflow-x-clip">
+        <div className="relative flex flex-col [--hv:min(480px,122vw)] h-[calc(var(--hv)*0.77+460px)] md:h-[calc(100vw*645/1440+815px)]">
           <Header />
           <HeroVideo />
           <Hero />
