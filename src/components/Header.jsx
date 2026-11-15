@@ -21,7 +21,7 @@ export function Header() {
 
     return (
         <motion.div 
-            className={`fixed top-0 left-0 px-6 md:px-10 lg:px-[clamp(32px,calc(50vw-480px),240px)] w-full z-20 ${
+            className={`fixed top-0 left-0 pl-8 pr-6 md:px-10 lg:px-[clamp(32px,calc(50vw-480px),240px)] w-full z-20 ${
                 isFooterVisible ? 'bg-[linear-gradient(to_bottom,white_45%,transparent_100%)]' : ''
             }`}
             initial={{ opacity: 0, y: -20 }}

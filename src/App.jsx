@@ -1,5 +1,7 @@
 import { Autonomie } from "./components/Autonomie"
+import { BackToTop } from "./components/BackToTop"
 import { Bento } from "./components/Bento"
+import { GridLines } from "./components/GridLines"
 import { BuyFooter } from "./components/BuyFooter"
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
@@ -15,8 +17,9 @@ function App() {
 
   return (
     <>
-      <div className="bg-[#FAF6F3] overflow-x-clip">
-        <div className="relative flex flex-col [--hv:min(480px,122vw)] h-[calc(var(--hv)*0.77+460px)] md:h-[calc(100vw*645/1440+815px)]">
+      <div className="relative isolate bg-[#FAF6F3] overflow-x-clip">
+        <GridLines />
+        <div className="relative flex flex-col h-[971px] md:h-[calc(100vw*789/1920+831px)]">
           <Header />
           <HeroVideo />
           <Hero />
@@ -29,6 +32,7 @@ function App() {
         <Mynthos />
         <Testimonials />
         <BuyFooter />
+        <BackToTop />
       </div>
     </>
   )

@@ -1,4 +1,3 @@
-import VideoPlugNTote from "../assets/f81746b3d40a398606f712a61a120482eea32cae.gif"
 import Plug1 from "../assets/08c77595a2b404c5ebca9959c80767141f95d052.png"
 import Plug2 from "../assets/c0a42725a511d3f948acdd3121e8946758481491.png"
 import Plug3 from "../assets/ab21da7c6138e12f20b88833886e79a795099ba2.png"
@@ -9,60 +8,48 @@ import Plug7 from "../assets/fdc15f9d2e9a28e43c24be6c398ad84f67bf6c7d.png"
 import Plug8 from "../assets/53a6cd3d612b2a82e6887fe6b7be2d7208d4b6c3.png"
 
 export function Plug() {
+    const plugs = [Plug1, Plug2, Plug3, Plug4, Plug5, Plug6, Plug7, Plug8]
+    const shelf = { background: 'radial-gradient(53.35% 53.35% at 50% 0%, #D3BFB0 0%, rgba(235, 224, 216, 0) 100%)' }
+    const statNumber = "w-[80px] h-[38px] font-gustavo font-bold text-[56px] leading-[38px] text-[#30171B]"
+    const statLabel = "w-full font-gustavo font-medium text-[13px] leading-[125%] text-[#816A6C]"
     return (
         <>
-            <div className="relative pt-[72px] min-h-[740px] md:min-h-[851px] flex flex-col justify-cente items-center">
-                <div className="flex w-full lg:w-[1178px] h-[217px] md:justify-center items-center max-md:overflow-x-auto max-md:[scrollbar-width:none]">
-                    <div className="grid grid-cols-8 shrink-0 max-md:mx-6 w-[720px] h-[200px]">
-                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
-                            <img src={Plug1} alt="" />
-                        </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
-                            <img src={Plug2} alt="" />
-                        </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
-                            <img src={Plug3} alt="" />
-                        </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
-                            <img src={Plug4} alt="" />
-                        </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
-                            <img src={Plug5} alt="" />
-                        </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
-                            <img src={Plug6} alt="" />
-                        </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
-                            <img src={Plug7} alt="" />
-                        </div>
-                        <div className="w-[90px] h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
-                            <img src={Plug8} alt="" />
-                        </div>
+            <div className="relative md:pt-[118px] min-h-[961px] md:min-h-[851px] flex flex-col justify-cente items-center">
+                {/* plugs : 2 rangées de 4 sur mobile, une rangée de 8 à partir de la tablette */}
+                <div className="flex w-full lg:w-[1178px] h-[400px] md:h-[200px] justify-center items-center">
+                    <div className="grid grid-cols-4 md:grid-cols-8 shrink-0 w-[360px] max-w-full md:w-[720px] h-[400px] md:h-[200px]">
+                        {plugs.map((plug, index) => (
+                            <div key={index} className="w-full md:w-[90px] h-[200px] md:h-full px-2.5 pt-[45px] hover:pt-[13px] transition-all duration-500">
+                                <img src={plug} alt="" />
+                            </div>
+                        ))}
                     </div>
                 </div>
-                <div className="absolute top-[250px] w-full lg:w-[1178px] max-md:px-6 h-[217px] pt-[138px]" style={{ background: 'radial-gradient(53.35% 53.35% at 50% 0%, #D3BFB0 0%, rgba(235, 224, 216, 0) 100%)' }}>
-                    <div className="flex flex-col items-start md:flex-row justify-center md:items-center gap-10 md:gap-[65px]">
-                        <div className="flex flex-row gap-4 md:gap-12">
+                {/* étagère de la première rangée (mobile uniquement) */}
+                <div aria-hidden="true" className="md:hidden pointer-events-none absolute top-[182px] left-1/2 -translate-x-1/2 w-[860px] h-[143px]" style={shelf}></div>
+                <div className="absolute top-[382px] md:top-[289px] w-full lg:w-[1178px] px-6 min-[360px]:px-12 md:px-0 h-[217px] pt-[142px] md:pt-[138px] bg-no-repeat bg-center max-md:bg-[length:860px_217px]" style={{ backgroundImage: shelf.background }}>
+                    <div className="flex flex-col items-start md:flex-row justify-center md:items-center gap-9 md:gap-[65px]">
+                        <div className="flex flex-row gap-6 min-[360px]:gap-12">
                             <div className="flex flex-col w-[120px] gap-6">
-                                <span className="w-[80px] min-h-[38px] font-gustavo font-bold text-[56px] leading-[90%] text-[#30171B]">
+                                <span className={statNumber}>
                                     30
                                 </span>
-                                <span className="w-full  font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
+                                <span className={statLabel}>
                                     Saveurs disponibles 
                                 </span>
                             </div>
                             <div className="flex flex-col w-[120px] gap-6">
-                                <span className="w-[80px] min-h-[38px] font-gustavo font-bold text-[56px] leading-[90%] text-[#30171B]">
+                                <span className={statNumber}>
                                     11
                                 </span>
-                                <span className="w-full font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
+                                <span className={statLabel}>
                                     Vertus médicinales 
                                 </span>
                             </div>
                         </div>
                         <div className="flex flex-row max-md:w-full">
-                            <span className="w-[304px] max-w-full min-h-[62px] font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
-                                Laissez-vous tenter par les saveurs des différents plugs et .
+                            <span className="w-[304px] max-w-full min-h-[62px] font-gustavo font-medium text-[15px] leading-[170%] text-[#816A6C]">
+                                Laissez-vous tenter par les saveurs des différents plugs et{' '}
                                 <span className="font-bold text-[#30171B]">découvrez un monde de délices</span> pour chaque envie.
                             </span>
                         </div>

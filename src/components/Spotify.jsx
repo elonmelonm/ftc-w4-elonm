@@ -3,18 +3,18 @@ import VideoSpotify from '../assets/Spotify Motion RENDER.mp4'
 export function Spotify() {
     return (
         <>
-            <div className="relative flex flex-row justify-center items-center px-6 py-24 md:px-10 lg:p-0 lg:h-[1200px] gap-[65px]" style={{ background: 'linear-gradient(180deg, rgba(235, 224, 216, 0) 0%, #EBE0D8 33.33%, #EBE0D8 66.67%, rgba(235, 224, 216, 0) 100%)' }}>
-                <div className="flex flex-col w-full lg:w-auto gap-12 lg:gap-[72px]">
+            <div className="relative flex flex-row justify-center items-center lg:items-start px-4 pt-[253px] pb-[71px] md:px-10 md:py-24 lg:px-0 lg:pb-0 lg:pt-[233px] lg:h-[1200px] gap-[65px]" style={{ background: 'linear-gradient(180deg, rgba(235, 224, 216, 0) 0%, #EBE0D8 33.33%, #EBE0D8 66.67%, rgba(235, 224, 216, 0) 100%)' }}>
+                <div className="flex flex-col w-full lg:w-auto gap-[42px] md:gap-12 lg:gap-[72px]">
                     <video
                         autoPlay muted loop playsInline
-                        className=" border border-[#30171B] rounded-[8px] w-full aspect-[740/387] lg:w-[740px] lg:h-[387px] object-cover"
+                        className=" border border-[#30171B] rounded-[8px] w-full aspect-[361/220] md:aspect-[740/387] lg:w-[740px] lg:h-[387px] object-cover"
                     >
                         <source src={VideoSpotify} type="video/mp4" />
                         Votre navigateur ne supporte pas la vidéo en arrière-plan.
                     </video>
-                    <div className="flex flex-row w-full md:h-[353px] gap-12">
-                        <div className="flex flex-col md:flex-row w-full justify-center md:h-[165px] gap-8 md:gap-12">
-                            <span className="md:w-[273px] font-tartuffo font-medium text-[48px] md:text-[64px] leading-[90%] text-[#30171B]">
+                    <div className="flex flex-row w-full max-md:px-2 min-[360px]:max-md:px-8 md:h-[353px] gap-12">
+                        <div className="flex flex-col md:flex-row w-full justify-center md:h-[165px] gap-[45px] md:gap-12">
+                            <span className="md:w-[273px] font-tartuffo font-medium text-[clamp(44px,14.25vw,56px)] md:text-[64px] leading-[90%] text-[#30171B]">
                                 suçotez vos titres préférés
                             </span>
                             <div className='flex flex-col w-full md:w-[273px] gap-8 '>
@@ -29,7 +29,7 @@ export function Spotify() {
                                         </span>
                                     </div>
                                     <span className="min-w-[224px]  font-gustavo font-medium text-[13px] leading-[170%] text-[#816A6C]">
-                                        Saveurs disponibles
+                                        En partenariat exclusif avec Spotify
                                     </span>
                                 </div>
                                 <span className="w-full font-gustavo font-medium text-[15px] leading-[170%] text-[#816A6C]">
